@@ -1,11 +1,12 @@
 const Items = require('../models/items');
 
 /*
-1. getItems     GET/items
-2. getItem      GET/items/:id
-3. addItem      POST => /items
-4. updateItem   PUT => /items/:id
-5. deleteItem   DELETE => /items/:id
+1. getItems     		GET/items
+2. getItemsByRegion GET/items/:regionId
+2. getItem     			GET/items/:id
+3. addItem      		POST => /items
+4. updateItem   		PUT => /items/:id
+5. deleteItem   		DELETE => /items/:id
 */
 
 module.exports = {
