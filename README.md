@@ -12,9 +12,15 @@ For easy visualization of the DB, use a MongoDB client ('Compass' for example).
 
 # Tested APIs:
 
-1.  GET- localhost:9000/api/items -> Get all items
-2.  GET- localhost:9000/api/{itemId} -> Get item by ID
-3.  POST- localhost:9000/api/users/signup -> New user signup
+GET
+
+1.  Get all items -> localhost:9000/api/items
+
+2.  Get item by ID -> localhost:9000/api/{itemId}
+
+POST
+
+1.  New user signup -> localhost:9000/api/users/signup
     Body example:
     {
     "imageUrl": "https://pbs.twimg.com/profile_images/850362029571543040/oOk99miL_400x400.jpg",
@@ -25,7 +31,15 @@ For easy visualization of the DB, use a MongoDB client ('Compass' for example).
     "password": "1234",
     "email": "samsam@gmail.com"
     }
-4.  POST- localhost:9000/api/items -> Add new item, requires user ID (Should be changed to token)
+
+2.  Existing user signin -> localhost:9000/api/users/signin
+    Body example:
+    {
+    "password": "1234",
+    "email": "samsam@gmail.com"
+    }
+
+3.  Add new item, requires user ID (Should be changed to token) -> localhost:9000/api/items
     Body example:
     {
     "title": "Yellow Ikea sofa",
