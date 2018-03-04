@@ -12,16 +12,19 @@ For easy visualization of the DB, use a MongoDB client ('Compass' for example).
 
 # Tested APIs:
 
-GET
+**GET**
 
 1.  Get all items -> localhost:9000/api/items
 
 2.  Get item by ID -> localhost:9000/api/{itemId}
 
-POST
+**POST**
 
 1.  New user signup -> localhost:9000/api/users/signup
-    Body example:
+
+    **Body example:**
+
+    ```
     {
     "imageUrl": "https://pbs.twimg.com/profile_images/850362029571543040/oOk99miL_400x400.jpg",
     "name": {
@@ -31,16 +34,24 @@ POST
     "password": "1234",
     "email": "samsam@gmail.com"
     }
+    ```
 
 2.  Existing user signin -> localhost:9000/api/users/signin
-    Body example:
+
+    **Body example:**
+
+    ```
     {
     "password": "1234",
     "email": "samsam@gmail.com"
     }
+    ```
 
 3.  Add new item, requires user ID (Should be changed to token) -> localhost:9000/api/items
-    Body example:
+
+    **Body example:**
+
+    ```
     {
     "title": "Yellow Ikea sofa",
     "description":
@@ -69,3 +80,4 @@ POST
     "price": 120,
     "isActive": true
     }
+    ```
