@@ -15,7 +15,7 @@ const { JWT_SECRET } = require('../configuration');
 const signToken = user => {
   return JWT.sign(
     {
-      iss: 'uvluni',
+      iss: 'wpcomtueiomcmi',
       sub: user._id,
       userId: user._id,
       iat: new Date().getTime(),
