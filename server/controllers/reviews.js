@@ -2,14 +2,6 @@ const Reviews = require('../models/reviews');
 // const Items = require('../models/items');
 const Users = require('../models/users');
 
-/*
-1. getReviews     GET/reviews
-2. getReview      GET/reviews/:id
-3. addReview      POST => /reviews
-4. updateReview   PUT => /reviews/:id
-5. deleteReview   DELETE => /reviews/:id
-*/
-
 module.exports = {
 	getReviews: async (req, res) => {
 		try {
